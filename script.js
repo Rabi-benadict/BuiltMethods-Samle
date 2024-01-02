@@ -54,7 +54,7 @@ Number.lastCharacterOf = function (num) {
 
 
 Number.charAt = function (num, index) {
-    var target = num;
+    var target = (num + "");
     let len = (target + "").length;
     if ((index > (len))) {
         console.error("Index out of bounds.");
